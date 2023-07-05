@@ -1,6 +1,6 @@
-package cn.liyohe.robin.file.controller;
+package cn.liyohe.robin.slim.file.controller;
 
-import cn.liyohe.robin.file.service.StorageService;
+import cn.liyohe.robin.slim.file.service.StorageService;
 import cn.liyohe.robin.slim.Result;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

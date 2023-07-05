@@ -1,4 +1,4 @@
-package cn.liyohe.robin.file.domain;
+package cn.liyohe.robin.slim.file.domain;
 
 import java.io.Serial;
 import java.io.Serializable;

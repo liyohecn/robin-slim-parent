@@ -1,11 +1,11 @@
-package cn.liyohe.robin.autoconfigure;
+package cn.liyohe.robin.slim.autoconfigure;
 
 
-import cn.liyohe.robin.file.StorageProperties;
-import cn.liyohe.robin.file.service.StorageService;
-import cn.liyohe.robin.file.service.impl.AliOssStorageServiceImpl;
-import cn.liyohe.robin.file.service.impl.HuaweiObsStorageServiceImpl;
-import cn.liyohe.robin.file.service.impl.MinioStorageServiceImpl;
+import cn.liyohe.robin.slim.file.StorageProperties;
+import cn.liyohe.robin.slim.file.service.StorageService;
+import cn.liyohe.robin.slim.file.service.impl.AliOssStorageServiceImpl;
+import cn.liyohe.robin.slim.file.service.impl.HuaweiObsStorageServiceImpl;
+import cn.liyohe.robin.slim.file.service.impl.MinioStorageServiceImpl;
 import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClientBuilder;
 import com.aliyun.oss.common.auth.DefaultCredentialProvider;
@@ -25,7 +25,7 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @ComponentScan(value = {
-        "cn.liyohe.robin.file",
+        "cn.liyohe.robin.slim.file",
 })
 @Configuration
 @EnableConfigurationProperties({StorageProperties.class})

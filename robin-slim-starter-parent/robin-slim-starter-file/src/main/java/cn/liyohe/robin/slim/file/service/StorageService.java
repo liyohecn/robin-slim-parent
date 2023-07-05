@@ -1,4 +1,4 @@
-package cn.liyohe.robin.file.service;
+package cn.liyohe.robin.slim.file.service;
 
 
 import java.io.InputStream;

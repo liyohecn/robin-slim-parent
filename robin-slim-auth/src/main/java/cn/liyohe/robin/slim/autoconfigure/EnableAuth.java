@@ -1,5 +1,4 @@
-package cn.liyohe.robin.autoconfigure;
-
+package cn.liyohe.robin.slim.autoconfigure;
 
 import org.springframework.context.annotation.Import;
 
@@ -8,6 +7,6 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @Documented
-@Import(FileStorageConfiguration.class)
-public @interface EnableFileStorage {
+@Import(AuthConfiguration.class)
+public @interface EnableAuth {
 }

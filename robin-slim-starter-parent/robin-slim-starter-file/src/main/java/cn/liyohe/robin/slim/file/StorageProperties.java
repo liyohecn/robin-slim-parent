@@ -1,4 +1,4 @@
-package cn.liyohe.robin.file;
+package cn.liyohe.robin.slim.file;
 
 
 import org.springframework.boot.context.properties.ConfigurationProperties;

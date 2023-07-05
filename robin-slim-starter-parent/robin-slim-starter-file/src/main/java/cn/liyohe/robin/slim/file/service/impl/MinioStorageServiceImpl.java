@@ -1,7 +1,7 @@
-package cn.liyohe.robin.file.service.impl;
+package cn.liyohe.robin.slim.file.service.impl;
 
-import cn.liyohe.robin.file.StorageProperties;
-import cn.liyohe.robin.file.service.StorageService;
+import cn.liyohe.robin.slim.file.StorageProperties;
+import cn.liyohe.robin.slim.file.service.StorageService;
 import io.minio.GetObjectArgs;
 import io.minio.MinioClient;
 

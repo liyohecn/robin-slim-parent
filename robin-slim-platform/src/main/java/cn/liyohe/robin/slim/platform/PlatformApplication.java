@@ -1,7 +1,7 @@
 package cn.liyohe.robin.slim.platform;
 
 
-import cn.liyohe.robin.autoconfigure.EnableFileStorage;
+import cn.liyohe.robin.slim.autoconfigure.EnableFileStorage;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
