@@ -13,8 +13,9 @@
     <description>Robin Parent 项目</description>
     <modules>
 
-        <module>robin-starter-parent</module>
-        <module>robin-platform</module>
+        <module>robin-slim-starter-parent</module>
+        <module>robin-slim-platform</module>
+        <module>robin-slim-auth</module>
     </modules>
 
     <properties>
@@ -73,22 +74,22 @@
 
             <dependency>
                 <groupId>cn.liyohe.robin.slim</groupId>
-                <artifactId>robin-platform</artifactId>
+                <artifactId>robin-slim-platform</artifactId>
                 <version>${robin.version}</version>
             </dependency>
             <dependency>
                 <groupId>cn.liyohe.robin.starter</groupId>
-                <artifactId>robin-starter-parent</artifactId>
+                <artifactId>robin-slim-starter-parent</artifactId>
                 <version>${robin.version}</version>
             </dependency>
             <dependency>
                 <groupId>cn.liyohe.robin.starter</groupId>
-                <artifactId>robin-starter-core</artifactId>
+                <artifactId>robin-slim-starter-core</artifactId>
                 <version>${robin.version}</version>
             </dependency>
             <dependency>
                 <groupId>cn.liyohe.robin.starter</groupId>
-                <artifactId>robin-starter-file</artifactId>
+                <artifactId>robin-slim-starter-file</artifactId>
                 <version>${robin.version}</version>
             </dependency>
         </dependencies>

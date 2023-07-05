@@ -10,11 +10,11 @@
     </parent>
 
     <groupId>cn.liyohe.robin.starter</groupId>
-    <artifactId>robin-starter-parent</artifactId>
+    <artifactId>robin-slim-starter-parent</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>robin-starter-core</module>
-        <module>robin-starter-file</module>
+        <module>robin-slim-starter-core</module>
+        <module>robin-slim-starter-file</module>
     </modules>
 
     <properties>

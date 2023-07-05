@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>cn.liyohe.robin.starter</groupId>
-        <artifactId>robin-starter-parent</artifactId>
+        <artifactId>robin-slim-starter-parent</artifactId>
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>robin-starter-core</artifactId>
+    <artifactId>robin-slim-starter-core</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
