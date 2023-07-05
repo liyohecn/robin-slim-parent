@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+
+file:
+  storage:
+    type: minio
+    endpoint: http://192.168.102.8:9000
+    accessKey: minioadmin
+    secretKey: minioadmin
+    bucket: storage

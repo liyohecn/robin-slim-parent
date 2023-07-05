@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.liyohe.robin.slim</groupId>
+    <artifactId>robin-slim-parent</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>robin-slim-parent</name>
+    <description>Robin Parent 项目</description>
+    <modules>
+
+        <module>robin-starter-parent</module>
+        <module>robin-platform</module>
+    </modules>
+
+    <properties>
+        <robin.version>1.0.0</robin.version>
+        <java.version>17</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <compiler.version>3.10.1</compiler.version>
+        <spring-boot.version>3.1.1</spring-boot.version>
+
+        <common-io.version>2.11.0</common-io.version>
+        <minio.version>8.5.4</minio.version>
+        <oss.version>3.16.3</oss.version>
+        <obs.version>3.23.3.1</obs.version>
+    </properties>
+
+    <dependencyManagement>
+        <!-- SpringBoot 依赖配置 -->
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${common-io.version}</version>
+            </dependency>
+
+
+            <!--     MINIO       -->
+            <dependency>
+                <groupId>io.minio</groupId>
+                <artifactId>minio</artifactId>
+                <version>${minio.version}</version>
+            </dependency>
+
+            <!-- Aliyun OSS -->
+            <dependency>
+                <groupId>com.aliyun.oss</groupId>
+                <artifactId>aliyun-sdk-oss</artifactId>
+                <version>${oss.version}</version>
+            </dependency>
+
+            <!-- Huawei OBS -->
+            <dependency>
+                <groupId>com.huaweicloud</groupId>
+                <artifactId>esdk-obs-java</artifactId>
+                <version>${obs.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>cn.liyohe.robin.slim</groupId>
+                <artifactId>robin-platform</artifactId>
+                <version>${robin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.liyohe.robin.starter</groupId>
+                <artifactId>robin-starter-parent</artifactId>
+                <version>${robin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.liyohe.robin.starter</groupId>
+                <artifactId>robin-starter-core</artifactId>
+                <version>${robin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.liyohe.robin.starter</groupId>
+                <artifactId>robin-starter-file</artifactId>
+                <version>${robin.version}</version>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>release_user</id>
+            <name>Release Repository</name>
+            <url>http://repository.liyohe.cn:8081/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshot_user</id>
+            <name>Snapshot Repository</name>
+            <url>http://repository.liyohe.cn:8081/repository/maven-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <!-- 阿里云maven仓库 -->
+    <repositories>
+        <repository>
+            <id>public</id>
+            <name>aliyun nexus</name>
+            <url>https://maven.aliyun.com/repository/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>public</id>
+            <name>aliyun nexus</name>
+            <url>https://maven.aliyun.com/repository/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${compiler.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
