@@ -9,7 +9,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @author liyohe
  */
 @ConfigurationProperties(prefix = "file.storage", ignoreUnknownFields = true)
-public class AuthProperties {
+public class OauthProperties {
 
     private String type;
 

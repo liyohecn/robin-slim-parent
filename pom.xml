@@ -15,7 +15,7 @@
 
         <module>robin-slim-starter-parent</module>
         <module>robin-slim-platform</module>
-        <module>robin-slim-auth</module>
+        <module>robin-slim-oauth</module>
     </modules>
 
     <properties>

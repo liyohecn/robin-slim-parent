@@ -7,6 +7,6 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @Documented
-@Import(AuthConfiguration.class)
-public @interface EnableAuth {
+@Import(OauthAutoConfiguration.class)
+public @interface EnableOauth {
 }

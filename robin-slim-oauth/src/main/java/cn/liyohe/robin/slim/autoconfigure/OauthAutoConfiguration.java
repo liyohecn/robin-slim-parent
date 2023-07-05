@@ -1,7 +1,7 @@
 package cn.liyohe.robin.slim.autoconfigure;
 
 
-import cn.liyohe.robin.slim.AuthProperties;
+import cn.liyohe.robin.slim.OauthProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -13,9 +13,9 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @ComponentScan(value = {
-        "cn.liyohe.robin.slim.auth",
+        "cn.liyohe.robin.slim.oauth",
 })
 @Configuration
-@EnableConfigurationProperties({AuthProperties.class})
-public class AuthConfiguration {
+@EnableConfigurationProperties({OauthProperties.class})
+public class OauthAutoConfiguration {
 }
